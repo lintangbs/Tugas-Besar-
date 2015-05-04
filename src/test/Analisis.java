@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class Analisis extends Input {
+public class Analisis {
     Scanner scan = new Scanner(System.in);
     Ruangan dataObject = new Ruangan();
     boolean a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u; ;
@@ -39,7 +39,7 @@ public class Analisis extends Input {
             JOptionPane.showMessageDialog(null, "Persegi Panjang");
             JOptionPane.showMessageDialog(null, "Hasil Sesuai");
         }else{
-            JOptionPane.showInputDialog("tidak sesuai");
+            JOptionPane.showInputDialog(null,"tidak sesuai");
             c = false;
         }
         return c;
@@ -47,20 +47,20 @@ public class Analisis extends Input {
 
     public boolean Analisis_jumlah_cendela_dan_pintu() {
         if(dataObject.getJumlah_cendela() >= 1){
-            JOptionPane.showInputDialog("sesuai");
+            JOptionPane.showInputDialog(null,"sesuai");
             d = true;
         }else{
-            JOptionPane.showInputDialog("tidak sesuai");
+            JOptionPane.showInputDialog(null,"tidak sesuai");
             d = false;
         }
         return d;  //  JOptionPane.showMessageDialog(null, "Jumlah pintu sesuai");
         }
     public boolean Analisis_jumlah_pintu(){
         if(dataObject.getJumlah_pintu() >= 2){
-            JOptionPane.showInputDialog("sesuai");
+            JOptionPane.showInputDialog(null,"sesuai");
             e = true;
         }else{
-            JOptionPane.showInputDialog("tidak sesuai");
+            JOptionPane.showInputDialog(null,"tidak sesuai");
             e = false;
         }
         return e;
@@ -76,7 +76,7 @@ public class Analisis extends Input {
             JOptionPane.showMessageDialog(null, "Tempat dan kondisi stop kontak Sesuai");
         f = true ;
         }else{
-            JOptionPane.showInputDialog("Stop kontak tidak sesuai");
+            JOptionPane.showInputDialog(null, "Stop kontak tidak sesuai");
             f = false;
         }
         return f;
@@ -92,7 +92,7 @@ public class Analisis extends Input {
             JOptionPane.showMessageDialog(null, "Posisi kabel LCD Sesua");
             g = true ;
         }else{
-            JOptionPane.showInputDialog("Tidak sesuai");
+            JOptionPane.showInputDialog(null, "Tidak sesuai");
             g = false;
         }
         return g;
@@ -150,7 +150,7 @@ public class Analisis extends Input {
             JOptionPane.showMessageDialog(null, "Anda dapat login");
         k = true ;
         }else{
-            JOptionPane.showInputDialog("Tidak seseuai");
+            JOptionPane.showInputDialog(null, "Tidak seseuai");
         }
         return k;
     }
